@@ -13,7 +13,7 @@ function logRequests(request, response, next) {
   const { method, url} = request;
   const logLabel = `[${method.toUpperCase()} ${url}]`;
 
-  console.time(logLabel);
+  console.time(logLabel); 
 
   next();
 
